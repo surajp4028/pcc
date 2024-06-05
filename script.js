@@ -2,7 +2,17 @@ const body = document.querySelector('body'),
       navMenu = body.querySelector('.panel'),
       closeicon = body.querySelector('.clsicon'),
       openicon = body.querySelector('.menu'),
-      submi = document.getElementById("submit");
+      submi = document.getElementById("submit"),
+      photography = document.getElementById("photography"),
+      development = document.getElementById("development"),
+      uiux = document.getElementById("ui-ux"),
+      all = document.getElementById("all"),
+      branding = document.getElementById("branding"),
+      tabdev = body.querySelector(".development"),
+      tabui = body.querySelector(".ui-ux"),
+      tabbrand = body.querySelector(".branding"),
+      moon = document.getElementById("moon"),
+      sun = document.getElementById('sun');
       // menu
     
       openicon.addEventListener("click", ()=>{
@@ -12,6 +22,11 @@ const body = document.querySelector('body'),
       closeicon.addEventListener("click",()=>{
         navMenu.classList.remove('open');
       });
+
+      moon.addEventListener("click",(event)=>{
+        body.classList.toggle('dark-theme')
+      });
+     
 
 
       submi.addEventListener("click", ()=>{
@@ -25,3 +40,99 @@ const body = document.querySelector('body'),
      
       });
 
+    //   photography
+   
+    photography.addEventListener("click",()=>{
+        photography.classList.add("active");
+        all.classList.remove('active');
+        development.classList.remove('active');
+        uiux.classList.remove('active');
+        branding.classList.remove('active');
+
+        tabui.classList.add("hidden");
+        tabbrand.classList.add("hidden");
+      });
+      development.addEventListener("click",()=>{
+        development.classList.add("active");
+        all.classList.remove('active');
+        photography.classList.remove('active');
+        uiux.classList.remove('active');
+        branding.classList.remove('active');
+
+        tabui.classList.add("hidden");
+        tabbrand.classList.add("hidden");
+
+      });
+
+      uiux.addEventListener("click",()=>{
+        uiux.classList.add("active");
+        all.classList.remove('active');
+        photography.classList.remove('active');
+        development.classList.remove('active');
+        branding.classList.remove('active');
+
+        tabui.classList.remove("hidden");
+        tabdev.classList.add("hidden");
+        tabbrand.classList.add("hidden");
+         
+      });
+      branding.addEventListener("click",()=>{
+        branding.classList.add("active");
+        all.classList.remove('active');
+        photography.classList.remove('active');
+        development.classList.remove('active');
+        uiux.classList.remove('active');
+
+        tabui.classList.add("hidden");
+        tabdev.classList.add("hidden");
+        tabbrand.classList.remove("hidden")
+      });
+      all.addEventListener("click",()=>{
+        all.classList.add("active");
+        development.classList.remove('active');
+        photography.classList.remove('active');
+        development.classList.remove('active');
+        uiux.classList.remove('active');
+        branding.classList.remove('active');
+
+        tabui.classList.remove("hidden");
+        tabdev.classList.remove("hidden");
+        tabbrand.classList.remove("hidden")
+    
+      });
+
+      tabbrand.addEventListener("click",()=>{
+        console.log("clicked")
+      });
+      
+
+      
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        loop: true,
+        centerSlide: true,
+        fade: true,
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints:{
+            0: {
+                slidesPerView: 1,
+            },
+            520: {
+                slidesPerView: 2,
+            },
+            950 : {
+                slidesPerView: 3,
+            }
+        },
+      });
