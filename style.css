@@ -1,0 +1,240 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.containe{
+    background: #F3EFE8;
+    width: 100% !important;
+    height: 100%;
+}
+.containe header{
+    padding: 20px;
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+.containe header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.containe header nav .left h3{
+    font-size: 23px;
+
+}
+.containe header nav .right ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+.containe header nav .right ul li{
+    margin-left: 25px;
+    cursor: pointer;
+}
+.containe header nav .right ul li .menu{
+    font-size: 30px;
+}
+ /* panel */
+ .panel{
+     width: 230px;
+     height: 100vh;
+     background-color: white;
+     box-shadow: 2px 20px 25px rgba(125, 125, 125, 0.197);
+     position: fixed;
+     top: 0px;
+     right: -300px;
+     padding: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: .3s ease-in;
+ }
+ .panel.open{
+     right: 0px;
+ }
+ .panel i{
+     position: absolute;
+     top: 20px;
+     left: 20px;
+     cursor: pointer;
+ }
+ .panel ul{
+     list-style: none;
+     text-align: center;
+     font-size: 22px;
+
+ }
+ .panel ul li{
+     margin-top: 20px;
+     cursor: pointer;
+ }
+
+
+ /* hero */
+
+ .hero{
+     max-width: 1200px;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .hero .hero-left{
+     width: 50%;
+ }
+ .hero .hero-left .fp{
+     margin-bottom: 10px;
+     font-weight: bold;
+ }
+ .hero .hero-left .fp span{
+    color: #34A687;
+ }
+ .hero .hero-left .sp{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.hero .hero-left .sp span{
+    color: #34A687;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 200;
+ }
+.hero .hero-left h3{
+    font-size: 85px;
+    font-weight: bold;
+    
+}
+.hero .hero-left h3 span{
+    color: #34A687;
+}
+
+.hero .hero-left .info{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.hero .hero-left .social ul{
+    list-style: none;
+    display: flex;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.hero .hero-left .social ul li{
+    margin-left: 10px;
+}
+.hero .hero-left button{
+    padding : 12px 18px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.hero .hero-right img{
+    width: 650px;
+    height: 100%;
+  
+ }
+/* contact */
+
+.contact{
+    max-width: 1000px;
+    margin: auto;
+    /* text-align: center; */
+}
+.contact h3{
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+}
+.contact .form-info{
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.contact .formpanel{
+    display: flex;
+    justify-content: space-between;
+}
+.contact .form-right{
+    width : 60%;
+}
+.contact .form-left{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+}
+.contact .form-left .info-box{
+    display: flex;
+    text-align: left;
+    margin-bottom: 20px;
+    /* border: 1px solid black; */
+}
+.contact .form-left .info-box i{
+    font-size: 28px;
+    margin-right: 10px;
+}
+.contact .form-left .info-box h5{
+    font-size: 16px;
+}
+
+
+form .input-box{
+    display: flex;
+    text-align: left;
+    margin-bottom: 10px;
+}
+form .input-box label{
+    font-size: 14px;
+}
+form .input-box .field input{
+    width: 100%;
+    height: 30px;
+}
+
+
+.form-right{
+    /* border: 1px solid black; */
+    width: 50%;
+}
+
+
+ /* footer */
+ footer{
+     max-width: 1200px;
+     margin: auto;
+     display: flex;
+     margin-top: 40px;
+     justify-content: space-between;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     border-top: 1px solid rgb(128, 128, 128);
+ }
+
+ footer .social ul{
+    list-style: none;
+    display: flex;
+    font-size: 24px;
+}
+
+.social ul li{
+    margin-left: 10px;
+}
+
+/* Resume */
+
+.head{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.resume{
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+
+/* carousal */
+
+
