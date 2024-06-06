@@ -12,7 +12,11 @@ const body = document.querySelector('body'),
       tabui = body.querySelector(".ui-ux"),
       tabbrand = body.querySelector(".branding"),
       moon = document.getElementById("moon"),
-      sun = document.getElementById('sun');
+      sun = document.getElementById('sun'),
+      education = document.getElementById('education'),
+      experience = document.getElementById('experince'),
+      tabedu = document.getElementById('edu'),
+      tabexp = document.getElementById('exp');
       // menu
     
       openicon.addEventListener("click", ()=>{
@@ -105,6 +109,25 @@ const body = document.querySelector('body'),
         console.log("clicked")
       });
       
+
+// resume
+education.addEventListener("click",()=>{
+    education.classList.add("active");
+    experience.classList.remove('active');
+
+    tabedu.classList.remove('hidden');
+    tabexp.classList.add('hidden');
+
+  });
+  experience.addEventListener("click",()=>{
+    experience.classList.add("active");
+    education.classList.remove('active');
+    tabedu.classList.add('hidden');
+    tabexp.classList.remove('hidden');
+
+  });
+
+
 
       
       var swiper = new Swiper(".mySwiper", {
