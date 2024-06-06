@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
+    scroll-behavior: smooth;
    
 }
 :root{
@@ -83,7 +84,13 @@
      cursor: pointer;
  }
 
-
+ .panel ul li a{
+     text-decoration: none;
+     color: black;
+ }
+ .panel ul li a:active{
+     color: #34A687;
+ }
  /* hero */
 
  .hero{
@@ -285,7 +292,24 @@ form .input-box .field input{
     margin-bottom: 40px;
    
 }
+.resume .row{
+    margin: auto !important;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.nav-item{
+    background-color: none !important;
+}
+.accordion-header{
+    background-color: none !important;
+}
 
+.accordion-header button{
+    background-color: none !important;
+}
 .card-container{
     padding: 20px;
     max-width: 1200px;
@@ -372,5 +396,11 @@ form .input-box .field input{
     display: none;
 }
 .branding.hidden{
+    display: none;
+}
+.education.hidden{
+    display: none;
+}
+.experince.hidden{
     display: none;
 }
